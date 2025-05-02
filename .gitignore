@@ -1,1 +1,31 @@
-infor.txt*
+# Specific text files
+infor.txt
+
+# Configuration files
+.hintrc
+
+# Node modules (if you're using npm)
+node_modules/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and distribution files
+dist/
+build/
+*.min.js
+
+# Environment variables
+.env
+.env.local
+
+# Log files
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db

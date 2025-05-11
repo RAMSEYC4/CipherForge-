@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!--section 1 start -->
   <!--header start-->
   <header>
     <div class="logo">
@@ -20,25 +21,183 @@
     <!--navigation for big-screen-->
     <nav class="nav-Menu">
       <a href="#">Home</a>
-      <a href="#">Feature</a>
-      <a href="#">About</a>
-      <a href="#">FAQ</a>
+      <a href="/html/Feature.html">Feature</a>
+      <a href="/html/About.html">About</a>
+      <a href="/html/FAQ.html">FAQ</a>
     </nav>
+    <!--navigation for small-screen start-->
     <div class="side-nav-container">
       <nav class="side-nav-right">
         <a href="#">Home</a>
-        <a href="#">Feature</a>
-        <a href="#">About</a>
-        <a href="#">FAQ</a>
+        <a href="/html/Feature.html">Feature</a>
+        <a href="/html/About.html">About</a>
+        <a href="/html/FAQ.html">FAQ</a>
       </nav>
     </div>
   </header>
-  <!--navigation for small-screen start-->
   <!--navigation for small-screen end-->
   <!--header end-->
-  <div></div>
+
+  <!--all content inside main tag start-->
+  <main>
+    <div class="intro">
+      <h1>Generate Unbreakable Passwords</h1>
+      <p class="subtitle">Create strong, secure, and unique passwords that protect your digital identity with our
+        advanced password generator.
+      </p>
+    </div>
+    <!--password-display start-->
+    <div class="password-display">
+      <div class="password-output">Generated password</div>
+      <!--strength-meter start-->
+      <div class="password-strength">
+        <div class="strength-meter">
+          <div class="strength-fill"></div>
+        </div>
+        <span class="strength-text">Very Strong</span>
+        <!--strength-meter end-->
+      </div>
+      <!--password-display end-->
+      <div class="action-buttons">
+        <button class="button primary-button">
+          <div>
+            <i class="fa-solid fa-rotate-right"></i>
+            <span class="icon-space">Generate New</span>
+          </div>
+        </button>
+        <button class="button secondary-button">
+          <div>
+            <i class="fa-solid fa-clipboard"></i>
+            <span class="icon-space">Copy</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!--section 1 end -->
+
+    <!--section 2 start -->
+    <div class="options-panel">
+      <h2 class="panel-title">Password Options</h2>
+      <div class="option-group">
+        <div class="option-row">
+          <label class="option-label">Password Length</label>
+          <div class="option-control">
+            <input type="range" min="8" max="32" value="20" class="slider">
+            <input type="number" value="20" min="8" max="32" class="length-input">
+          </div>
+        </div>
+
+        <div class="option-row">
+          <label class="option-label">Include Uppercase Letters</label>
+          <div class="option-control">
+            <label class="toggle">
+              <input type="checkbox" checked="">
+              <span class="slider-toggle"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="option-row">
+          <label class="option-label">Include Lowercase Letters</label>
+          <div class="option-control">
+            <label class="toggle">
+              <input type="checkbox" checked="">
+              <span class="slider-toggle"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="option-row">
+          <label class="option-label">Include Numbers</label>
+          <div class="option-control">
+            <label class="toggle">
+              <input type="checkbox" checked="">
+              <span class="slider-toggle"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="option-row">
+          <label class="option-label">Include Symbols</label>
+          <div class="option-control">
+            <label class="toggle">
+              <input type="checkbox" checked="">
+              <span class="slider-toggle"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="option-row">
+          <label class="option-label">Exclude Ambiguous Characters</label>
+          <div class="option-control">
+            <label class="toggle">
+              <input type="checkbox">
+              <span class="slider-toggle"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--section 2 end -->
 
 
+    <!--section 3 start -->
+    <div class="history-panel">
+      <h2 class="panel-title">Recently Generated</h2>
+      <div class="history-item">
+        <div>
+          <div class="history-password">A7b#F9z$Q2xP3y@L</div>
+          <div class="history-details">16 characters • 2 minutes ago</div>
+        </div>
+        <div class="history-actions">
+          <button class="icon-button">
+            <i class="fa-solid fa-clipboard"></i>
+          </button>
+          <button class="icon-button">
+            <i class="fa-regular fa-trash-can fa-beat"></i>
+          </button>
+        </div>
+      </div>
+      <div class="history-item">
+        <div>
+          <div class="history-password">T5%JrDn9@KmE8g!Z</div>
+          <div class="history-details">16 characters • 5 minutes ago</div>
+        </div>
+
+        <div class="history-actions">
+          <button class="icon-button">
+            <i class="fa-solid fa-clipboard"></i>
+          </button>
+          <button class="icon-button">
+            <i class="fa-regular fa-trash-can fa-beat"></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="history-item">
+        <div>
+          <div class="history-password">W4&Cx7hL^9pD2s*B</div>
+          <div class="history-details">16 characters • 10 minutes ago</div>
+        </div>
+
+        <div class="history-actions">
+          <button class="icon-button">
+            <i class="fa-solid fa-clipboard"></i>
+          </button>
+          <button class="icon-button">
+            <i class="fa-regular fa-trash-can fa-beat"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <!--section 3 end  -->
+    <div class="Ads">
+
+    </div>
+  </main>
+  <!--all content inside main tag end-->
+  <footer>© 2025 CipherForge. All rights reserved. | Privacy Policy | Terms of Service</footer>
   <script src="/js/script.js"></script>
 </body>
 
